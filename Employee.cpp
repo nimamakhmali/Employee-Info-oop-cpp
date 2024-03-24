@@ -21,10 +21,13 @@
     }
     void displayInfo()const
     {
-    cout<<" ----------INFORMATION---------- ";
-    cout<<"Employee Name : "<<employeeName<<endl;
-    cout<<"Employee ID : "<<employeeId<<endl;
+      cout<<" ----------INFORMATION---------- ";
+      cout<<"Employee Name : "<<employeeName<<endl;
+      cout<<"Employee ID : "<<employeeId<<endl;
     }
-    virtual void inputInfo()=0;
-    virtual void displayInfo()const=0;
+     virtual void inputInfo()=0;
+     virtual void displayInfo()const=0;
  };
+
+  class visitingEmployee :public Employee
+ {};

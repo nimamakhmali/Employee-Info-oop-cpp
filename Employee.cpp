@@ -29,5 +29,22 @@
      virtual void displayInfo()const=0;
  };
 
-  class visitingEmployee :public Employee
- {};
+ class visitingEmployee :public Employee
+ {
+  private:
+   int numberofDays;
+   float dailyWages;
+  public:
+   void inputInfo()
+   {
+    cout<<"Entry daily wages : ";
+    cin>>dailyWages;
+    cout<<"Enter Number of DAys : ";
+    cin>>numberofDays;
+   }
+   void calculateSalary() const
+   {
+   	 float salary = dailyWages*numberofDays;
+   	  cout<<"Salary : "<<salary<<endl;
+   }
+ };

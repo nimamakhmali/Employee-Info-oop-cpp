@@ -48,3 +48,6 @@
    	  cout<<"Salary : "<<salary<<endl;
    }
  };
+
+  class paramentEmp :public Employee
+ {};

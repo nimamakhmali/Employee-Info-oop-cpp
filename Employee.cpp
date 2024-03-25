@@ -51,3 +51,8 @@
 
   class paramentEmp :public Employee
  {};
+
+ main()
+ {
+  return 0;
+ }

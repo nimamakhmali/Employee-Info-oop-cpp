@@ -65,7 +65,33 @@
    }
  };
 
- main()
- {
-  return 0;
- }
+main() 
+{
+ 	Employee *employee;
+  int choice;
+  do
+  {
+   cout<<"-----Main Menu----------\n";
+   cout<<"1. Create Visiting Employee \n";
+   cout<<"2. Create Parmanent Employee \n";
+   cout<<"0. Exit Program \n";
+   cout<<"Enter Your Choice : \n";
+   cin>>choice;
+   switch (choice)
+   {
+   case 1:
+      	employee = new visitingEmployee();
+    break;
+   case 2:
+    employee = new paramentEmp();
+    break;
+    case 0:
+     cout<<"Exit program \n";
+     break;
+     default:
+     cout<<"Invalid Number  Plz Enter Correct Number \n";
+     continue;
+   }
+  
+  }while (choice !=0);
+}

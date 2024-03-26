@@ -1,6 +1,6 @@
-//**************************************************
-//     Nima Makhmali  -----> Buali sina university
-//**************************************************
+//*************************************************************
+//     Nima Makhmali  -----> Buali sina university of IRAN❤️
+//*************************************************************
 #include <iostream>
  #include <string>
  using namespace std;
@@ -21,12 +21,13 @@
     }
     void displayInfo()const
     {
-      cout<<" ----------INFORMATION---------- ";
-      cout<<"Employee Name : "<<employeeName<<endl;
-      cout<<"Employee ID : "<<employeeId<<endl;
+    cout<<" ----------INFORMATION---------- ";
+    cout<<"Employee Name : "<<employeeName<<endl;
+    cout<<"Employee ID : "<<employeeId<<endl;
     }
-     virtual void inputInfo()=0;
-     virtual void displayInfo()const=0;
+    virtual void inputInfo()=0;
+    virtual void displayInfo()const=0;
+    virtual void calculateSalary()=0;
  };
 
  class visitingEmployee :public Employee
@@ -48,7 +49,6 @@
    	  cout<<"Salary : "<<salary<<endl;
    }
  };
-
  class paramentEmp :public Employee
  {
   private:
@@ -64,9 +64,7 @@
      cout<<"Salray : "<<monthlySalary<<" per month"<<endl;
    }
  };
-
-main() 
-{
+main() {
  	Employee *employee;
   int choice;
   do
@@ -92,6 +90,14 @@ main()
      cout<<"Invalid Number  Plz Enter Correct Number \n";
      continue;
    }
-  
+   if(choice !=0)
+   {
+    employee->inputInfo();
+    employee->inputInfo();
+    cout<<"\n";
+    employee->displayInfo();
+    employee->calculateSalary();
+    delete employee; 
+   }
   }while (choice !=0);
-}
+ }

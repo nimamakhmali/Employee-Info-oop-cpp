@@ -64,7 +64,8 @@
      cout<<"Salray : "<<monthlySalary<<" per month"<<endl;
    }
  };
-main() {
+main() 
+{
  	Employee *employee;
   int choice;
   do

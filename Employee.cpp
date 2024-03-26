@@ -49,8 +49,21 @@
    }
  };
 
-  class paramentEmp :public Employee
- {};
+ class paramentEmp :public Employee
+ {
+  private:
+   int monthlySalary;
+  public:
+   void inputInfo()
+   {
+    cout<<"Enter Monthly Salary : ";
+    cin>>monthlySalary;
+   }
+   void calculateSalary() const
+   {
+     cout<<"Salray : "<<monthlySalary<<" per month"<<endl;
+   }
+ };
 
  main()
  {
